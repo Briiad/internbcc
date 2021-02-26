@@ -6,6 +6,8 @@ nav {
     padding: var(--lengthMd3) var(--lengthLg2) ;
     background-color: #FAFAFA;
     font-family: var(--font-poppins);
+    font-size: 14px;
+    font-weight: 600;
     box-shadow: 0 3px 7px -6px var(--text-color);
     color: var(--text-color);
 }
@@ -34,11 +36,22 @@ nav ul li{
     border-right: 2px solid #000;
 }
 
+.right-nav .__nav-btn{
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: var(--lengthSm2);
+    transition: 0.5s ease;
+}
+
 .right-nav .__signin-btn{
     list-style: none;
     text-decoration: none;
     color: var(--text-color);
-    padding-right: var(--lengthSm3);
+    padding: var(--lengthSm2);
+    margin-right: 10px;
+    margin-left: -10px;
+    transition: 0.5s ease;
 }
 
 .right-nav .__signup-btn{
@@ -53,6 +66,13 @@ nav ul li{
 }
 
 .right-nav .__signup-btn:hover{
+    background-color: #d4d0e0;
+    box-shadow: 3px 3px 3px var(--secondary);
+    transition: 0.5s ease;
+}
+
+.right-nav .__nav-btn:hover,
+.right-nav .__signin-btn:hover{
     background-color: #d4d0e0;
     box-shadow: 3px 3px 3px var(--secondary);
     transition: 0.5s ease;

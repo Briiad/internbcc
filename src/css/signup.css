@@ -2,7 +2,7 @@
 
 .Signup {
     width: 100vw;
-    height: 89vh;
+    height: 89.6vh;
     display: flex;
     align-items: center;
 }
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     width: 50vh;
-    height: 89vh;
+    height: 89.6vh;
     padding: var(--lengthLg1);
     background-image: var(--gradient-main);
     flex-grow: 1;
@@ -20,7 +20,7 @@
 
 .Signup .signup-form {
     width: 70vh;
-    height: 89vh;
+    height: 89.6vh;
     display: flex;
     align-items: center;
     justify-content: center;

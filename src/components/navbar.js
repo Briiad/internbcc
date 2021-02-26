@@ -14,8 +14,30 @@ function Navbar() {
                 </div>
 
                 <div className = "right-nav">
-                    <li>Mentor</li>
-                    <li>Kerja</li>
+                    <Link className = "__nav-btn" to = "/">
+                        <li>
+                            <span>
+                                Home
+                            </span>
+                        </li>
+                    </Link>
+
+                    <Link className = "__nav-btn" to = "/carimentor">
+                        <li>
+                            <span>
+                                Mentor
+                            </span>
+                        </li>
+                    </Link>
+
+                    <Link className = "__nav-btn" to = "/carikerja">
+                        <li>
+                            <span>
+                                Kerja!
+                            </span>
+                        </li>
+                    </Link>
+                    
                     <li className = "__right-line"></li>
                     <li></li>
 
