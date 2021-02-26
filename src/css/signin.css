@@ -1,0 +1,28 @@
+@import url('../App.css');
+
+.Signin {
+    width: 100vw;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+}
+
+.Signin .landing-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 89vh;
+    padding: var(--lengthLg1);
+    background-image: var(--gradient-main);
+    flex-grow: 1;
+}
+
+.Signin .signin-form {
+    width: 70vh;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--lengthLg1);
+}

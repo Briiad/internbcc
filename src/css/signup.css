@@ -1,0 +1,28 @@
+@import url('../App.css');
+
+.Signup {
+    width: 100vw;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+}
+
+.Signup .landing-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 89vh;
+    padding: var(--lengthLg1);
+    background-image: var(--gradient-main);
+    flex-grow: 1;
+}
+
+.Signup .signup-form {
+    width: 70vh;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--lengthLg1);
+}

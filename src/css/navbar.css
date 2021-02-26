@@ -1,0 +1,59 @@
+@import url('../App.css');
+
+nav {
+    position: relative;
+    width: 100vw;
+    padding: var(--lengthMd3) var(--lengthLg2) ;
+    background-color: #FAFAFA;
+    font-family: var(--font-poppins);
+    box-shadow: 0 3px 7px -6px var(--text-color);
+    color: var(--text-color);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+
+.left-nav li {
+    padding: 0 var(--lengthMd2) 0 0;
+}
+
+.right-nav li{
+    padding: 0 var(--lengthMd2);
+}
+
+.right-nav .__right-line{
+    border-right: 2px solid #000;
+}
+
+.right-nav .__signin-btn{
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+    padding-right: var(--lengthSm3);
+}
+
+.right-nav .__signup-btn{
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid transparent;
+    background-color: var(--secondary);
+    padding: var(--lengthSm2);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.right-nav .__signup-btn:hover{
+    background-color: #d4d0e0;
+    box-shadow: 3px 3px 3px var(--secondary);
+    transition: 0.5s ease;
+}
