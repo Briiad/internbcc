@@ -31,8 +31,10 @@ After you finished those steps, go on and start rolling!
 The must have addons dependencies to install :
 ```sh
      npm install react-router-dom
-``````sh
+```
+```sh
      npm npm install react-icons
-``````sh
+```
+```sh
      npm npm install @material-ui/core
 ```
