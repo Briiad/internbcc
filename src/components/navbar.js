@@ -44,7 +44,7 @@ function Navbar() {
                     <Link className = "__signin-btn" to = "/user_signin">
                         <li>
                             <span>
-                                Masuk
+                                Daftar
                             </span>
                         </li>
                     </Link>
@@ -52,7 +52,7 @@ function Navbar() {
                     <Link className = "__signup-btn" to = "/user_signup">
                         <li>
                             <span>
-                                Daftar
+                                Masuk
                             </span>
                         </li>
                     </Link>

@@ -21,8 +21,118 @@
 .Signup .signup-form {
     width: 70vh;
     height: 89.6vh;
+    padding: var(--lengthLg3);
+}
+
+.form-header{
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-group {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: var(--lengthMd1);
+}
+
+.form-group .forms{
+    display: flex;
     justify-content: center;
-    padding: var(--lengthLg1);
+    margin-top: var(--lengthSm3);
+    padding-top: var(--lengthSm3);
+}
+
+.form-group .forms input{
+    font-family: var(--font-opensans);
+    font-size: var(--lengthMd1);
+    font-weight: 500;
+    width: 100%;
+    height: var(--lengthLg2);
+    text-align: center;
+    border: transparent;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.form-group .forms input:focus{
+    outline: none;
+}
+
+.signup-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--lengthLg1);
+    font-family: var(--font-poppins);
+    font-size: 14px;
+}
+
+.signup-btn p a{
+    color: var(--text-color);
+}
+
+.signup-btn .btn-signup {
+    padding: var(--lengthSm3) var(--lengthLg2);
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    pointer-events: fill;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+}
+
+.border-sosmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: var(--lengthMd2);
+    font-family: var(--font-opensans);
+}
+
+.signup-sosmed {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'google google' ;
+    grid-gap: 10px;
+    justify-content: space-around;
+    padding-top: var(--lengthMd1);
+}
+
+.signup-sosmed .sign-fb, .sign-twt, .sign-google {
+    background-color: var(--secondary);
+}
+
+.signup-sosmed .sign-google{
+    grid-area: google;
+    padding: var(--lengthSm2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: var(--font-opensans);
+}
+
+.signup-sosmed .sign-fb, .sign-twt{
+    padding: var(--lengthSm2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: var(--font-opensans);
+    font-size: 12px;
+}
+
+.redirect-to-daftar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: var(--lengthLg2);
+    font-family: var(--font-opensans);
+    font-size: 12px;
 }
