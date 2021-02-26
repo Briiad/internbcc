@@ -1,0 +1,137 @@
+@import url('../App.css');
+
+.Signin {
+    width: 100vw;
+    height: 89.6vh;
+    display: flex;
+    align-items: center;
+}
+
+.Signin .landing-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 89.6vh;
+    padding: var(--lengthLg1);
+    background-image: var(--gradient-main);
+    flex-grow: 1;
+}
+
+.Signin .form-signin {
+    width: 70vh;
+    height: 89.6vh;
+    padding: var(--lengthLg2);
+}
+
+.header-form{
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.group-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: var(--lengthSm1);
+}
+
+.group-form .forms{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--lengthSm3);
+    padding-top: var(--lengthSm3);
+}
+
+.group-form .forms input{
+    font-family: var(--font-opensans);
+    font-size: var(--lengthSm3);
+    font-weight: 500;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    border: transparent;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.group-form .forms input:focus{
+    outline: none;
+}
+
+.signin-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--lengthLg1);
+    font-family: var(--font-poppins);
+    font-size: 14px;
+}
+
+.signin-btn p a{
+    color: var(--text-color);
+}
+
+.signin-btn .btn-signin {
+    padding: var(--lengthSm3) var(--lengthLg2);
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-poppins);
+}
+
+.border-sosmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: var(--lengthMd2);
+    font-family: var(--font-opensans);
+}
+
+.signin-sosmed {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'google google' ;
+    grid-gap: 10px;
+    justify-content: space-around;
+    padding-top: var(--lengthMd1);
+}
+
+.signin-sosmed .sign-fb, .sign-twt, .sign-google {
+    background-color: var(--secondary);
+}
+
+.signin-sosmed .sign-google{
+    grid-area: google;
+    padding: var(--lengthSm2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: var(--font-opensans);
+}
+
+.signin-sosmed .sign-fb, .sign-twt{
+    padding: var(--lengthSm2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: var(--font-opensans);
+    font-size: 12px;
+}
+
+.redirect-to-masuk{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: var(--lengthLg2);
+    font-family: var(--font-opensans);
+    font-size: 12px;
+}
