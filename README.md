@@ -33,8 +33,8 @@ The must have addons dependencies to install :
      npm install react-router-dom
 ```
 ```sh
-     npm npm install react-icons
+     npm install react-icons
 ```
 ```sh
-     npm npm install @material-ui/core
+     npm install @material-ui/core
 ```
