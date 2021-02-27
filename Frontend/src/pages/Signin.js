@@ -21,6 +21,9 @@ function Signin(){
                             <input type="text" name="email" placeholder = "Email" autoComplete="off" />
                         </div>
                         <div className="forms">
+                            <input type="text" name="username" placeholder = "Username" autoComplete="off" />
+                        </div>
+                        <div className="forms">
                             <input type="password" name="password" placeholder = "Password" />
                         </div>
                         <div className="forms">

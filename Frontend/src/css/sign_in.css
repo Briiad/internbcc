@@ -41,7 +41,6 @@
 .group-form .forms{
     display: flex;
     justify-content: center;
-    margin-top: var(--lengthSm3);
     padding-top: var(--lengthSm3);
 }
 
@@ -49,7 +48,7 @@
     font-family: var(--font-opensans);
     font-size: var(--lengthSm3);
     font-weight: 500;
-    width: 100%;
+    width: 90%;
     height: 2.5rem;
     text-align: center;
     border: transparent;
@@ -131,7 +130,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: var(--lengthLg2);
+    padding-top: var(--lengthMd2);
     font-family: var(--font-opensans);
     font-size: 12px;
 }
