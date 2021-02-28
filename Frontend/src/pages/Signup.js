@@ -28,7 +28,7 @@ function Signup(){
 
                     <div className="signup-btn">
                         <p><a href = "#">Lupa Password?</a></p>
-                        <button type="button" className="btn-signup" onClick = {useData} >Masuk</button>
+                        <button type="button" className="btn-signup" >Masuk</button>
                     </div>
 
                     <div className="border-sosmed">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
@@ -7,6 +7,7 @@ import * as iconFc from 'react-icons/fc';
 import * as iconFa from 'react-icons/fa';
 
 function Signin(){
+
     return(
         <div className = "Signin">
             <div className = "landing-signin">
@@ -60,7 +61,7 @@ function Signin(){
                     </div>
 
                     <div className="signin-btn">
-                        <button type="button" className="btn-signin" onClick={insertData} >Daftar</button>
+                        <button type="button" className="btn-signin" >Daftar</button>
                     </div>
 
                     <div className="border-sosmed">
