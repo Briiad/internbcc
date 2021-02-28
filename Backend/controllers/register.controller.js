@@ -6,7 +6,7 @@ function registerUser(req, res, next) {
         .then(data => {
             req.session.loggedin = true
             req.session.username = data.username
-            res.redirect('/dashboard')
+            res.status(200).send(data)
         })
         .catch(err => {
             next(err)

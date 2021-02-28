@@ -3,7 +3,7 @@ const Schemas = require("../validators")
 const useJoiError = true
 
 function joiValidator(req, res, next) {
-    const _supportedMethods = ["post", "put", "get"]
+    const _supportedMethods = ["post", "put"]
 
     const _validationOptions = {
         abortEarly : false,
@@ -12,7 +12,8 @@ function joiValidator(req, res, next) {
     }
 
     let route = req.originalUrl.split("/")
-    route.pop()
+    route.unshift()
+    console.log(route)
     const method = req.method.toLowerCase()
 
     if(_.includes(_supportedMethods, method) && _.hasIn(Schemas, route)){

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import axios from 'axios';
 
 import '../css/sign_in.css';
 import * as iconFc from 'react-icons/fc';
 import * as iconFa from 'react-icons/fa';
 
 function Signin(){
-
+    
     return(
         <div className = "Signin">
             <div className = "landing-signin">
@@ -18,7 +17,7 @@ function Signin(){
                 <div className = "form-container">
                     <div className = "header-form">Daftar</div>
 
-                    <div className = "group-form">
+                    <div className = "group-form" >
 
                         <div className="forms">
                             <input 
@@ -61,7 +60,13 @@ function Signin(){
                     </div>
 
                     <div className="signin-btn">
-                        <button type="button" className="btn-signin" >Daftar</button>
+                        <button 
+                            type="submit" 
+                            value="Create user"
+                            className="btn-signin"
+                            >
+                                Daftar
+                        </button>
                     </div>
 
                     <div className="border-sosmed">

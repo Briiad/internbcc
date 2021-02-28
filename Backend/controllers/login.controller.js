@@ -19,17 +19,14 @@ function loginUser(req, res, next) {
                     const token = jwt.sign(payload, process.env.JWT_TOKEN)
                     req.session.loggedin = true
                     req.session.username = req.body.username
-                    res.redirect('/dashboard')
+                    res.status(200).send({data, token})
                 } else {
-                    res.send({message: 'wrong password'})
+                    next({statusCode: 400, message: 'wrong password'})
                 }
             })
             .catch(err => {
-                res.send({
-                    message: 'no account with that username'
-                })
-            }
-            )
+                next()
+            })
     } else {
         res.send('Please enter Username and Password!');
     }

@@ -7,6 +7,9 @@ import * as iconFc from 'react-icons/fc';
 import * as iconFa from 'react-icons/fa';
 
 function Signup(){
+
+    
+
     return(
         <div className = "Signup">
             <div className = "landing-signup">
