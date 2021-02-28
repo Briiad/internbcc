@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import '../css/sign_in.css';
 import * as iconFc from 'react-icons/fc';
 import * as iconFa from 'react-icons/fa';
+
+const insertData = () => {
+    axios.get("/register").then(function(response) {
+        console.log(response);
+    });
+};
 
 function Signin(){
     return(
@@ -17,15 +24,19 @@ function Signin(){
                     <div className = "header-form">Daftar</div>
 
                     <div className = "group-form">
+
                         <div className="forms">
                             <input type="text" name="email" placeholder = "Email" autoComplete="off" />
                         </div>
+
                         <div className="forms">
                             <input type="text" name="username" placeholder = "Username" autoComplete="off" />
                         </div>
+
                         <div className="forms">
                             <input type="password" name="password" placeholder = "Password" />
                         </div>
+
                         <div className="forms">
                             <input type="password" name="confirm_password" placeholder = "Confirm Password" />
                         </div>
@@ -33,7 +44,7 @@ function Signin(){
                     </div>
 
                     <div className="signin-btn">
-                        <button type="button" className="btn-signin">Daftar</button>
+                        <button type="button" className="btn-signin" onClick={insertData} >Daftar</button>
                     </div>
 
                     <div className="border-sosmed">
