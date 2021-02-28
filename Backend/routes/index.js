@@ -17,7 +17,7 @@ app.get('/dashboard', jwtMiddleware, (req, res) => {
 })
 
 app.use('/', (req, res) => {
-    res.send({message: 'Welcome'})
+    res.send("Welcome")
 })
 
 module.exports = app
