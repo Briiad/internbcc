@@ -14,6 +14,32 @@ const registerSchema = Joi.object().keys({
         .max(20)
         .required(),
 
+    username: Joi.string()
+        .alphanum()
+        .min(3)
+        .max(20)
+        .required(),
+
+    password: Joi.string()
+        .alphanum()
+        .min(8)
+        .pattern(new RegExp('^[a-zA-Z0-9]'))
+        .required()
+        .strict(),
+
+    confirmPassword: Joi.string()
+        .valid(Joi.ref('password'))
+        .required()
+        .strict()
+})
+
+const loginSchema = Joi.object().keys({
+    username: Joi.string()
+        .alphanum()
+        .min(3)
+        .max(20)
+        .required(),
+
     password: Joi.string()
         .alphanum()
         .min(8)
@@ -23,5 +49,6 @@ const registerSchema = Joi.object().keys({
 })
 
 module.exports = {
-    "register": registerSchema
+    "register": registerSchema,
+    "login": loginSchema
 }
