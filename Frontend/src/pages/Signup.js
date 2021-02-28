@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 import '../css/signup.css'
 import * as iconFc from 'react-icons/fc';
@@ -27,7 +28,7 @@ function Signup(){
 
                     <div className="signup-btn">
                         <p><a href = "#">Lupa Password?</a></p>
-                        <button type="button" className="btn-signup">Masuk</button>
+                        <button type="button" className="btn-signup" onClick = {useData} >Masuk</button>
                     </div>
 
                     <div className="border-sosmed">

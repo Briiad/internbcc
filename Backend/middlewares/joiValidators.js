@@ -3,7 +3,7 @@ const Schemas = require("../validators")
 const useJoiError = true
 
 function joiValidator(req, res, next) {
-    const _supportedMethods = ["post", "put"]
+    const _supportedMethods = ["post", "put", "get"]
 
     const _validationOptions = {
         abortEarly : false,

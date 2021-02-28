@@ -1,16 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 import '../css/sign_in.css';
 import * as iconFc from 'react-icons/fc';
 import * as iconFa from 'react-icons/fa';
-
-const insertData = () => {
-    axios.get("/register").then(function(response) {
-        console.log(response);
-    });
-};
 
 function Signin(){
     return(
@@ -26,19 +20,41 @@ function Signin(){
                     <div className = "group-form">
 
                         <div className="forms">
-                            <input type="text" name="email" placeholder = "Email" autoComplete="off" />
+                            <input 
+                                type="text" 
+                                name="email"
+                                id = "email" 
+                                placeholder = "Email" 
+                                autoComplete="off" 
+                            />
                         </div>
 
                         <div className="forms">
-                            <input type="text" name="username" placeholder = "Username" autoComplete="off" />
+                            <input 
+                                type="text" 
+                                name="username" 
+                                id = "username" 
+                                placeholder = "Username" 
+                                autoComplete="off" 
+                            />
                         </div>
 
                         <div className="forms">
-                            <input type="password" name="password" placeholder = "Password" />
+                            <input 
+                                type="password" 
+                                name="password" 
+                                id = "password" 
+                                placeholder = "Password"
+                            />
                         </div>
 
                         <div className="forms">
-                            <input type="password" name="confirm_password" placeholder = "Confirm Password" />
+                            <input 
+                                type="password" 
+                                name="confirmPassword" 
+                                id = "confirmPassword" 
+                                placeholder = "Confirm Password"
+                            />
                         </div>
                         
                     </div>
