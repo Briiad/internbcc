@@ -13,8 +13,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path = "/" component = {Home}/>
-          <Route exact path = "/user_signup" component = {Signup} />
-          <Route exact path = "/user_signin" component = {Signin} />
+          <Route exact path = "/usersignup" component = {Signup} />
+          <Route exact path = "/usersignin" component = {Signin} />
         </Switch>
       </Router>
     </div>

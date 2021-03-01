@@ -21,7 +21,7 @@
 .Signup .signup-form {
     width: 70vh;
     height: 89.6vh;
-    padding: var(--lengthLg3);
+    padding: var(--lengthLg2);
 }
 
 .form-header{
@@ -64,7 +64,7 @@
 .signup-btn{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: var(--lengthLg1);
     font-family: var(--font-poppins);
@@ -132,7 +132,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: var(--lengthLg2);
+    padding-top: var(--lengthMd2);
     font-family: var(--font-opensans);
     font-size: 12px;
 }

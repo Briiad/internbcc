@@ -41,18 +41,18 @@ function Navbar() {
                     <li className = "__right-line"></li>
                     <li></li>
 
-                    <Link className = "__signin-btn" to = "/user_signin">
+                    <Link className = "__signin-btn" to = "/usersignin">
                         <li>
                             <span>
-                                Daftar
+                                Masuk
                             </span>
                         </li>
                     </Link>
 
-                    <Link className = "__signup-btn" to = "/user_signup">
+                    <Link className = "__signup-btn" to = "/usersignup">
                         <li>
                             <span>
-                                Masuk
+                                Daftar
                             </span>
                         </li>
                     </Link>
