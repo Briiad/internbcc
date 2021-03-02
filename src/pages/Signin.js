@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import api from '../API/api';
+import axios from 'axios';
 
 import '../css/sign_in.css'
 import * as iconFc from 'react-icons/fc';
@@ -13,7 +13,7 @@ function Signin(){
 
     const handleLogin = async(e) => {
         e.preventDefault();
-        const {data}= await api.post("/login", {username, password}, {});
+        const {data}= await axios.post("/login", {username, password}, {});
         console.log(data);
     }
 

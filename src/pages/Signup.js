@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import api from '../API/api';
+import axios from 'axios';
 
 import '../css/signup.css';
 import * as iconFc from 'react-icons/fc';
@@ -15,7 +15,7 @@ function Signup () {
 
     const handleSignup = async(e) => {
         e.preventDefault();
-        const {data, token} = await api.post("/register", {name, email, username, password, confirmPassword}, {});
+        const {data, token} = await axios.post("/register", {name, email, username, password, confirmPassword}, {});
         console.log(data);
         console.log(token);
     };
