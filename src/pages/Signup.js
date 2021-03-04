@@ -150,6 +150,12 @@ function Signup () {
                                             transition={{duration: 1.6}}
                                         >
                                             <div className="signup-btn">
+                                                
+                                                <div className="terms">
+                                                    <input type="checkbox" name="terms" id="terms" />
+                                                    <label htmlFor="terms">Terms & Service</label>
+                                                </div>
+                                            
                                                 <motion.button type="submit" className="btn-signup" 
                                                     whileTap={{scale:0.8}}
                                                     whileHover={{

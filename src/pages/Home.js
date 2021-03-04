@@ -30,6 +30,21 @@ function Home(){
 
             <div className="landing-content">
                 <h1>Kenapa Keeerja.io?</h1>
+
+                <div className="card-container">
+                    <div className="card-box">
+                        Card 1
+                    </div>
+
+                    <div className="card-box">
+                        Card 2
+                    </div>
+
+                    <div className="card-box">
+                        Card 3
+                    </div>
+                </div>
+                
             </div>
         </motion.div>
     );
