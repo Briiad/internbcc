@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import {motion} from 'framer-motion';
 
 import '../css/sign_in.css'
 import * as iconFc from 'react-icons/fc';
-import * as iconFa from 'react-icons/fa';
+
+//IMPORT ANIMATION FROM ANIMATE.JS
+import {form_module_animate, form_animate, transition} from '../animations/animate'
+
 
 function Signin(){
 
@@ -13,7 +17,7 @@ function Signin(){
 
     const handleLogin = async(e) => {
         e.preventDefault();
-        const {data}= await axios.post("/login", {username, password}, {});
+        const {data}= await axios.post("/user/login", {username, password}, {});
         console.log(data);
     }
 
@@ -22,8 +26,14 @@ function Signin(){
             <div className = "landing-signin">
                 <h1>Sign in</h1>
             </div>
-            <form onSubmit = {handleLogin} >
-                <div className = "form-signin">
+                <motion.div className = "form-signin"
+                    initial="in"
+                    animate="out"
+                    exit="in"
+                    variants={form_module_animate}
+                    transition={transition}
+                    >
+                    <form onSubmit={handleLogin}>
                     <div className = "form-container">
                         <div className = "form-header">Masuk</div>
 
@@ -65,21 +75,13 @@ function Signin(){
                         </div>
 
                         <div className="signin-sosmed">
-                            <div className="sign-fb">
-                                <iconFa.FaFacebookF />
-                                <p> &nbsp; Facebook</p>
-                            </div>
-                            <div className="sign-twt">
-                                <iconFa.FaTwitter />
-                                <p> &nbsp; Twitter</p>
-                            </div>
                             <div className="sign-google">
                                 <iconFc.FcGoogle />
                                 <p> &nbsp; Masuk dengan Google</p>
                             </div>
                         </div>
 
-                        <div className="redirect-to-masuk">
+                        <div className="redirect-to-daftar">
                             <p>
                                 Baru di NamaWeb? 
                                 <Link to="/usersignup">
@@ -89,9 +91,9 @@ function Signin(){
                                 </Link>
                             </p>
                         </div>
-                    </div>              
-                </div>
-            </form>
+                    </div> 
+                </form>            
+            </motion.div>
         </div>
     );
 }

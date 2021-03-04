@@ -10,10 +10,13 @@
 :root {
     --font-opensans: 'Open Sans', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
-    --primary: #8f67ff;
-    --secondary: #f1ecff;
+    --primary: #480CA8;
+    --secondary: #F72585;
+    --option1: #B5179E;
+    --option2: #3F37C9;
+    --darker_white: #f1ecff;
     --text-color: #251946;
-    --gradient-main: linear-gradient(55.67deg, #8F67FF 2.7%, #FA71CD 92.55%);
+    --gradient-main: linear-gradient(55.67deg, #480CA8 2.7%, #F72585 92.55%);
 
     --lengthSm1: 0.25rem;
     --lengthSm2: 0.5rem;

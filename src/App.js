@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
+import {AnimatePresence} from 'framer-motion';
+
 import './App.css';
 
 import Home from './pages/Home';
@@ -11,11 +13,13 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path = "/" component = {Home}/>
-          <Route exact path = "/usersignup" component = {Signup} />
-          <Route exact path = "/usersignin" component = {Signin} />
-        </Switch>
+        <AnimatePresence exitBeforeEnter>
+          <Switch>
+            <Route exact path = "/" component = {Home}/>
+            <Route exact path = "/usersignup" component = {Signup} />
+            <Route exact path = "/usersignin" component = {Signin} />
+          </Switch>
+        </AnimatePresence>
       </Router>
     </div>
   );

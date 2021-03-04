@@ -1,63 +1,67 @@
 @import url('../App.css');
 
 .Signup {
-    width: 100vw;
-    height: 89.6vh;
+    width: 100%;
+    height: 90vh;
     display: flex;
     align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;    
+    background-image: var(--gradient-main);
 }
 
 .Signup .landing-signup {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vh;
-    height: 89.6vh;
+    width: 100%;
+    height: 90vh;
     padding: var(--lengthLg1);
-    background-image: var(--gradient-main);
-    flex-grow: 1;
+
 }
 
 .Signup .signup-form {
-    width: 70vh;
-    height: 89.6vh;
+    width: 50%;
+    height: 80vh;
+    margin-right: var(--lengthLg2);
     padding: var(--lengthLg2);
+    background-color: white;
+    border-radius: 10px;
 }
 
-.form-header{
+.header-form{
     font-family: var(--font-poppins);
     font-size: 2rem;
     font-weight: 700;
 }
 
-.form-group {
+.group-form {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin-top: var(--lengthMd1);
+    margin-top: var(--lengthSm1);
 }
 
-.form-group .forms{
+.group-form .forms{
     display: flex;
-    justify-content: center;
-    margin-top: var(--lengthSm3);
+    justify-content: center;;
     padding-top: var(--lengthSm3);
 }
 
-.form-group .forms input{
+.group-form .forms input{
     font-family: var(--font-opensans);
-    font-size: var(--lengthMd1);
+    font-size: var(--lengthSm3);
     font-weight: 500;
-    width: 100%;
-    height: var(--lengthLg2);
+    width: 90%;
+    height: 2.5rem;
     text-align: center;
     border: transparent;
-    background-color: var(--secondary);
+    background-color: var(--darker_white);
     border-radius: 10px;
 }
 
-.form-group .forms input:focus{
+.group-form .forms input:focus{
     outline: none;
 }
 
@@ -72,13 +76,13 @@
 }
 
 .signup-btn p a{
-    color: var(--text-color);
+    color: var(--darker_white);
 }
 
 .signup-btn .btn-signup {
     padding: var(--lengthSm3) var(--lengthLg2);
     background-color: var(--primary);
-    color: var(--secondary);
+    color: var(--darker_white);
     border: none;
     border-radius: 5px;
     pointer-events: fill;
@@ -96,21 +100,16 @@
 }
 
 .signup-sosmed {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 'google google' ;
-    grid-gap: 10px;
+    display: flex;
     justify-content: space-around;
-    padding-top: var(--lengthMd1);
-}
-
-.signup-sosmed .sign-fb, .sign-twt, .sign-google {
-    background-color: var(--secondary);
+    padding-top: var(--lengthSm3);
 }
 
 .signup-sosmed .sign-google{
-    grid-area: google;
     padding: var(--lengthSm2);
+    padding-left: var(--lengthLg2);
+    padding-right: var(--lengthLg2);
+    background-color: var(--darker_white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,17 +117,7 @@
     font-family: var(--font-opensans);
 }
 
-.signup-sosmed .sign-fb, .sign-twt{
-    padding: var(--lengthSm2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    font-family: var(--font-opensans);
-    font-size: 12px;
-}
-
-.redirect-to-daftar{
+.redirect-to-masuk{
     display: flex;
     justify-content: space-around;
     align-items: center;
