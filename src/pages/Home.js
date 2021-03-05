@@ -33,17 +33,45 @@ function Home(){
 
                 <div className="card-container">
                     <div className="card-box">
-                        Card 1
+                        <div className="ilustration">
+                            <div className="ilust">
+                                ilustration
+                            </div>
+                        </div>
+                        <div className="features">
+                            FEATURES
+                        </div>  
                     </div>
 
                     <div className="card-box">
-                        Card 2
+                        <div className="ilustration">
+                            <div className="ilust">
+                                ilustration
+                            </div>
+                        </div>
+                        <div className="features">
+                            FEATURES
+                        </div>  
                     </div>
 
                     <div className="card-box">
-                        Card 3
+                        <div className="ilustration">
+                            <div className="ilust">
+                                ilustration
+                            </div>
+                        </div>
+                        <div className="features">
+                            FEATURES
+                        </div>  
                     </div>
                 </div>
+            </div>
+
+            <div className="landing-carikerja">
+
+            </div>
+
+            <div className="landing-carimentor">
                 
             </div>
         </motion.div>
