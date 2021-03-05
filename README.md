@@ -1,4 +1,4 @@
-# Welcome to our BCC Project! ( We Haven't name it yet! )
+# Keeerja.io
 
 ## _Mentor and work finding platform_
 
@@ -36,5 +36,11 @@ The must have addons dependencies to install :
      npm install react-icons
 ```
 ```sh
-     npm install @material-ui/core
+     npm install framer-motion
 ```
+
+## QnA
+
+Any question can be asked through my email
+
+**briiiad@student.ub.ac.id**
