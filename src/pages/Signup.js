@@ -26,7 +26,7 @@ function Signup () {
         return(
             <motion.div className = "Signup"
                 initial={{
-                    x: "100%",
+                    x: "100vw",
                     opacity: 0
                 }}
                 animate={{
@@ -34,11 +34,11 @@ function Signup () {
                     opacity: 1
                 }}
                 exit={{
-                    x: "100%",
+                    x: "100vw",
                     opacity: 0
 
                 }}
-                transition={transition}
+                transition={{type: 'spring', duration: 0.6}}
             >
                 <div className = "landing-signup">
                     <h1>Sign up</h1>
@@ -49,7 +49,12 @@ function Signup () {
                         animate="out"
                         exit="in"
                         variants= {form_module_animate}
-                        transition={transition}
+                        transition={{    
+                            type: "spring",
+                            stiffness: 100,
+                            duration: 0.5,
+                            delay: 0.5
+                        }}
                         >
                         <form onSubmit = {handleSignup}>
                             <div className = "form-container">
@@ -58,7 +63,7 @@ function Signup () {
                                     animate="middle"
                                     exit="start"
                                     variants = {form_animate}
-                                    transition={{duration: 0.6}}
+                                    transition={{duration: 0.6, delay:1}}
                                 >
                                     <div className = "header-form">Daftar</div>
                                 </motion.div>
@@ -69,7 +74,7 @@ function Signup () {
                                             animate="middle"
                                             exit="start"
                                             variants = {form_animate}
-                                            transition={{duration: 0.8}}
+                                            transition={{duration: 0.8, delay:1}}
                                         >
                                             <div className="forms">
                                                 <input 
@@ -89,7 +94,7 @@ function Signup () {
                                             animate="middle"
                                             exit="start"
                                             variants = {form_animate}
-                                            transition={{duration: 1}}
+                                            transition={{duration: 1, delay:1}}
                                         >
                                             <div className="forms">
                                                 <input 
@@ -109,7 +114,7 @@ function Signup () {
                                             animate="middle"
                                             exit="start"
                                             variants = {form_animate}
-                                            transition={{duration: 1.2}}
+                                            transition={{duration: 1.2, delay:1}}
                                         >
                                             <div className="forms">
                                                 <input 
@@ -128,7 +133,7 @@ function Signup () {
                                             animate="middle"
                                             exit="start"
                                             variants = {form_animate}
-                                            transition={{duration: 1.4}}
+                                            transition={{duration: 1.4, delay:1}}
                                         >
                                             <div className="forms">
                                                 <input 
@@ -147,7 +152,7 @@ function Signup () {
                                             animate="middle"
                                             exit="start"
                                             variants = {form_animate}
-                                            transition={{duration: 1.6}}
+                                            transition={{duration: 1.6, delay:1}}
                                         >
                                             <div className="signup-btn">
                                                 

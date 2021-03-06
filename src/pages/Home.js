@@ -1,80 +1,28 @@
-import React from 'react';
-import { motion } from "framer-motion";
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 
+import 'aos/dist/aos.css';
 import '../css/home.css';
-
-import {transition} from '../animations/animate'
+import Cards from '../components/cards';
+import Landingpage from '../components/landingpage';
+import Carikerja from '../components/landing-carikerja';
+import Carimentor from '../components/landing-carimentor';
+import Footer from '../components/footer';
 
 function Home(){
+
+    useEffect(() => {
+        Aos.init({});
+    }, [])
+
     return(
-        <motion.div className = "home"
-            initial={{
-                x: "-100%",
-                opacity: 0
-            }}
-            animate={{
-                x: 0,
-                opacity: 1
-            }}
-            exit={{
-                x : "-100%",
-                opacity: 0
-            }}
-            transition={transition}
-        >
-            <div className = "landing">
-                <div className="header">
-                    <h1>Keeerja.io</h1>
-                </div>
-            </div>
-
-            <div className="landing-content">
-                <h1>Kenapa Keeerja.io?</h1>
-
-                <div className="card-container">
-                    <div className="card-box">
-                        <div className="ilustration">
-                            <div className="ilust">
-                                ilustration
-                            </div>
-                        </div>
-                        <div className="features">
-                            FEATURES
-                        </div>  
-                    </div>
-
-                    <div className="card-box">
-                        <div className="ilustration">
-                            <div className="ilust">
-                                ilustration
-                            </div>
-                        </div>
-                        <div className="features">
-                            FEATURES
-                        </div>  
-                    </div>
-
-                    <div className="card-box">
-                        <div className="ilustration">
-                            <div className="ilust">
-                                ilustration
-                            </div>
-                        </div>
-                        <div className="features">
-                            FEATURES
-                        </div>  
-                    </div>
-                </div>
-            </div>
-
-            <div className="landing-carikerja">
-
-            </div>
-
-            <div className="landing-carimentor">
-                
-            </div>
-        </motion.div>
+        <div className = "home">
+            <Landingpage/>
+            <Cards/>
+            <Carikerja/>
+            <Carimentor/>
+            <Footer/>
+        </div>
     );
 }
 

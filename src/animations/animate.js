@@ -11,7 +11,7 @@ export const form_animate = {
 
 export const form_module_animate = {
     in: {
-        y: "-100%"
+        y: "-100vh"
     },
     out: {
         y: 0
