@@ -22,7 +22,22 @@ function Signin(){
     }
 
     return(
-        <div className = "Signin">
+        <motion.div className = "Signin"
+            initial={{
+                x: "100vw",
+                opacity: 0
+            }}
+            animate={{
+                x: 0,
+                opacity: 1
+            }}
+            exit={{
+                x: "100vw",
+                opacity: 0
+
+            }}
+            transition={{type: 'spring', duration: 0.6}}
+        >
             <div className = "landing-signin">
                 <h1>Sign in</h1>
             </div>
@@ -31,38 +46,83 @@ function Signin(){
                     animate="out"
                     exit="in"
                     variants={form_module_animate}
-                    transition={transition}
+                    transition={{
+                        type: "spring",
+                        stiffness: 100,
+                        duration: 0.5,
+                        delay: 0.5
+                    }}
                     >
                     <form onSubmit={handleLogin}>
                     <div className = "form-container">
-                        <div className = "form-header">Masuk</div>
+                        <motion.div
+                            initial="start"
+                            animate="middle"
+                            exit="start"
+                            variants = {form_animate}
+                            transition={{duration: 0.6, delay:1}}
+                        >
+                            <div className = "form-header">Masuk</div>
+                        </motion.div>
 
                         <div className = "form-group">
-                            <div className="forms">
-                                <input 
-                                type="text" 
-                                name="username" 
-                                placeholder = "username" 
-                                autoComplete="off" 
-                                value={username}
-                                onChange = {e => setUsername(e.target.value)} 
-                                />
-                            </div>
-                            <div className="forms">
-                                <input 
-                                type="password" 
-                                name="password" 
-                                placeholder = "Password" 
-                                value = {password} 
-                                onChange = {e => setPassword(e.target.value)}
-                                />
-                            </div>
+                            <motion.div
+                                initial="start"
+                                animate="middle"
+                                exit="start"
+                                variants = {form_animate}
+                                transition={{duration: 0.8, delay:1}}
+                            >
+                                <div className="forms">
+                                    <input 
+                                    type="text" 
+                                    name="username" 
+                                    placeholder = "username" 
+                                    autoComplete="off" 
+                                    value={username}
+                                    onChange = {e => setUsername(e.target.value)} 
+                                    />
+                                </div>
+                            </motion.div>
+
+                            <motion.div
+                                initial="start"
+                                animate="middle"
+                                exit="start"
+                                variants = {form_animate}
+                                transition={{duration: 1, delay:1}}
+                            >
+                                <div className="forms">
+                                    <input 
+                                    type="password" 
+                                    name="password" 
+                                    placeholder = "Password" 
+                                    value = {password} 
+                                    onChange = {e => setPassword(e.target.value)}
+                                    />
+                                </div>
+                            </motion.div>
+                            
                         </div>
 
-                        <div className="signin-btn">
+                        <motion.div className="signin-btn"
+                            initial="start"
+                            animate="middle"
+                            exit="start"
+                            variants = {form_animate}
+                            transition={{duration: 1.2, delay:1}}
+                        >
                             <p><a href = "#">Lupa Password?</a></p>
-                            <button type="submit" className="btn-signin" >Masuk</button>
-                        </div>
+                            <motion.button type="submit" className="btn-signin" 
+                                whileTap={{scale:0.8}}
+                                whileHover={{
+                                    scale: 1.1,
+                                    backgroundColor: "#3F37C9"
+                                }}
+                            >
+                                Masuk
+                            </motion.button>
+                        </motion.div>
 
                         <div className="border-sosmed">
                             <svg width="120" height="1" viewBox="0 0 150 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +154,7 @@ function Signin(){
                     </div> 
                 </form>            
             </motion.div>
-        </div>
+        </motion.div>
     );
 }
 

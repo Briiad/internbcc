@@ -79,3 +79,7 @@ nav ul li{
     box-shadow: 3px 3px 3px var(--darker_white);
     transition: 0.5s ease;
 }
+
+@media (max-width: 370px){
+    
+}

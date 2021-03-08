@@ -24,14 +24,15 @@ function Landingpage() {
     >
         <div className="header">
             <motion.div className="header-title"
-                initial={{x:100, y:0}}
+                initial={{y:-200, opacity:0}}
                 animate={{
-                    x: [0, -300],
-                    scale: [1, 1.5]
+                    y: [-200, 150],
+                    scale: [1, 1.5],
+                    opacity:1
                 }}
                 transition={{delay: 1}}
             >
-                <h1>Keeerja.io</h1>
+                <h1>Kerjapedia</h1>
             </motion.div>
             <div className="header-logo">
 

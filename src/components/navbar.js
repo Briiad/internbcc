@@ -29,7 +29,7 @@ function Navbar() {
 
                         </svg>
                         </li>
-                        <li>Keeerja.io</li>
+                        <li>erjapedia</li>
                     </div>
 
                     <div className = "right-nav">

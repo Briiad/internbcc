@@ -19,8 +19,8 @@
 
 .header .header-logo{
     position: absolute;
-    top: 25%;
-    left: 60%;
+    top: 15%;
+    left: 39%;
 }
 
 .landing-content{
@@ -147,4 +147,65 @@
 
 .footer p{
     font-size: 12px;
+}
+
+
+@media only screen and (max-width: 370px){
+
+    .header .header-logo{
+        top: 15%;
+        left: 23%;
+    }
+
+    .header h1{
+        font-size: 18px;
+    }
+
+    .header-logo svg{
+        width: 200px;
+        height: 200px;
+    }
+
+    .landing-content {
+        height: 100%;
+    }
+
+    .landing-content .card-container{
+        flex-direction: column;
+    }
+
+    .landing-content .card-box{
+        width: 90%;
+        height: 50vh;
+        margin-top: var(--lengthMd3);
+    }
+
+    .landing-carikerja {
+        flex-direction: column;
+    }
+
+    .landing-carimentor{
+        flex-direction: column-reverse;
+    }
+
+    .landing-carikerja .carikerja-desc{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: var(--lengthSm2);
+    }
+
+    .landing-carimentor .carimentor-desc{
+        width: 100%;
+        align-items: center;
+        padding: var(--lengthSm2);
+        text-align: center;
+    }
+
+    .landing-carikerja .person-image,
+    .landing-carimentor .person-image{
+        width: 200px;
+        height: 50vh;
+        margin: var(--lengthMd3);
+    }
 }

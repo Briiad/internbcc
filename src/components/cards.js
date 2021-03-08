@@ -11,7 +11,7 @@ function Cards() {
         <h1 
             data-aos="fade-up" 
         >
-            Kenapa Keeerja.io?
+            Kenapa Kerjapedia ?
         </h1>
 
         <div className="card-container">

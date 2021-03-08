@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import Navbar from './components/navbar';
+import Caripekerjaan from './pages/Caripekerjaan';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path = "/" component = {Home}/>
             <Route exact path = "/usersignup" component = {Signup} />
             <Route exact path = "/usersignin" component = {Signin} />
+            <Route exact path = "/carikerja" component = {Caripekerjaan} />
           </Switch>
         </AnimatePresence>
       </Router>
