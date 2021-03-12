@@ -13,7 +13,7 @@ function CostSelect({ setRange }) {
     return (
         <div className="Select">
             {/* <Select options={options} /> */}
-            <select onChange={(e) => setRange(e.target.value)}>
+            <select onChange={(e) => setRange(e.target.value)} className="select-range">
                 {options.map((option, id) => (
                     <option key={id} value={option.value}>{option.label}</option>
                 ))}
