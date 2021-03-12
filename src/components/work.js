@@ -12,13 +12,20 @@ function Work() {
     return (
         <div className="Work">
             <h1>Pekerjaan untuk anda</h1>
-            {global.length === 0 ? ("Loading") : (
-                <div className="Works">
+            {global.length === 0 ? ("Tidak ada data untuk ditampilkan") : (
+                <div className="Works-list">
                     {global.map((job) => {
                         return (
-                            <div key={job.id}>
-                                <h3>{job.jobTitle}</h3>
-                                <p>{job.Desc}</p>
+                            <div key={job.id} className="job">
+                                <div className="job-img">
+
+                                </div>
+                                <div className="job-about">
+                                    <h3>{job.jobTitle}</h3>
+                                    <p>{job.jobDesc}</p>
+                                </div>
+
+                                <button>Lihat Detail</button>
                             </div>
                         );
                     })}

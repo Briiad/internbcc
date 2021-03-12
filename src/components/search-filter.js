@@ -33,6 +33,7 @@ function Searchfilter({ setTampil }) {
                         <p> Cari Pekerjaan </p>
                         <input type="text"
                             name="caripekerjaan"
+                            placeholder="e.x Web Design"
                             value={keyword}
                             onChange={(e) => setKeyword(e.target.value)}
                         />
@@ -42,6 +43,7 @@ function Searchfilter({ setTampil }) {
                         <p>Lokasi Pekerjaan</p>
                         <input type="text"
                             name="lokasipekerjaan"
+                            placeholder="e.x Indonesia"
                             value={location}
                             onChange={(e) => setLocation(e.target.value)}
                         />
