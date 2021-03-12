@@ -15,6 +15,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -27,6 +28,11 @@ nav ul li {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
 }
 
 .right-nav li {
@@ -80,4 +86,11 @@ nav ul li {
 }
 
 @media (max-width: 370px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .right-nav {
+    flex-direction: column;
+  }
 }
