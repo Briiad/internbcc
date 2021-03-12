@@ -17,7 +17,8 @@ function Searchfilter({ setTampil }) {
         const { data } = await axios.post("/job/allFilter", {
             minFee: arrRange[0] * 100000,
             maxFee: arrRange[1] * 100000,
-            location
+            location,
+            key: keyword
         });
         setGlobal(data.data);
         setTampil(true);

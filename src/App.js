@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
-import {AnimatePresence} from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { createContext, useState } from 'react';
 
 import './App.css';
@@ -19,14 +19,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <AnimatePresence exitBeforeEnter>
+          <Navbar />
           <Switch>
-            <Context.Provider value = {{global, setGlobal}}> 
-              <Route exact path = "/" component = {Home}/>
-              <Route exact path = "/usersignup" component = {Signup} />
-              <Route exact path = "/usersignin" component = {Signin} />
-              <Route exact path = "/carikerja" component = {Caripekerjaan} />
+            <Context.Provider value={{ global, setGlobal }}>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/usersignup" component={Signup} />
+              <Route exact path="/usersignin" component={Signin} />
+              <Route exact path="/carikerja" component={Caripekerjaan} />
             </Context.Provider>
           </Switch>
         </AnimatePresence>

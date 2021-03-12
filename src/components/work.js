@@ -18,11 +18,13 @@ function Work() {
                         return (
                             <div key={job.id} className="job">
                                 <div className="job-img">
-
+                                    <img src={job.picture} alt="gambar" />
                                 </div>
                                 <div className="job-about">
                                     <h3>{job.jobTitle}</h3>
                                     <p>{job.jobDesc}</p>
+                                    <p>{job.location}</p>
+                                    <p>Rp.{job.fee}</p>
                                 </div>
 
                                 <button>Lihat Detail</button>

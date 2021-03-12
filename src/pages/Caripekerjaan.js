@@ -13,7 +13,7 @@ function Caripekerjaan() {
     return (
         <div>
             <Searchfilter setTampil={setCategory} />
-            {!category ? <Kategori /> && <UserReview /> : <Work />}
+            {!category ? <><Kategori /> <UserReview /> </> : <Work />}
             <Footer />
         </div>
     );
