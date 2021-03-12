@@ -1,11 +1,18 @@
 import React from 'react'
+import { dataCategory } from '../config/dataCategory';
 
 function Kategori() {
     return (
         <div className="kategori">
-            <h1>Kategori</h1>
             <div className="list-kategori">
-                
+                {dataCategory.map((item, index) => {
+                    return(
+                        <div key={index} className={item.cName}>
+                            <p className={item.cNameP}>{item.title}</p>
+                        </div>
+                    );
+                    
+                })}
             </div>
         </div>
     )
