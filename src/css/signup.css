@@ -158,4 +158,5 @@
 
 .waiting .type__ h1 {
   color: var(--primary);
+  text-shadow: 2px 2px 2px var(--secondary);
 }
