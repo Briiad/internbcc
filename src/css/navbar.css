@@ -1,6 +1,8 @@
 @import url("../App.css");
 
 nav {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: var(--lengthMd1) var(--lengthLg2);
   background-color: #fafafa;
@@ -9,13 +11,6 @@ nav {
   font-weight: 600;
   box-shadow: 0 3px 7px -6px var(--text-color);
   color: var(--text-color);
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -27,20 +22,18 @@ nav ul li {
 .left-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
-.right-nav {
+.right-nav ul {
   display: flex;
   align-items: center;
+  z-index: 999;
 }
 
 .right-nav li {
   padding: 0 var(--lengthMd2);
-}
-
-.right-nav .__right-line {
-  border-right: 2px solid #000;
 }
 
 .right-nav .__nav-btn {
@@ -56,8 +49,6 @@ nav ul li {
   text-decoration: none;
   color: var(--text-color);
   padding: var(--lengthSm2);
-  margin-right: 10px;
-  margin-left: -10px;
   transition: 0.5s ease;
 }
 
@@ -85,12 +76,45 @@ nav ul li {
   transition: 0.5s ease;
 }
 
+/* HAMBURGER */
+
+.styledBurger {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+
+.styledBurger div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+@media (min-width: 370px) {
+  .styledBurger div {
+    display: none;
+  }
+}
+
 @media (max-width: 370px) {
   nav ul {
     flex-direction: column;
   }
 
-  .right-nav {
-    flex-direction: column;
+  .right-nav ul {
+    flex-flow: column nowrap;
+    background-color: rgba(72, 12, 168, 1);
+    position: fixed;
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
   }
 }

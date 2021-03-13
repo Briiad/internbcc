@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion";
 
 import '../css/navbar.css';
 
-import { logo } from '../animations/animate'
+import { logo } from '../animations/animate';
+import Hamburger from './Hamburger';
 
 function Navbar() {
 
     return (
         <AnimatePresence>
             <nav>
-                <ul>
-                    <div className="left-nav">
+                <div className="left-nav">
+                    <ul>
                         <li>
                             <svg width="30" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -29,51 +29,10 @@ function Navbar() {
 
                             </svg>
                         </li>
-                        <li>erjapedia</li>
-                    </div>
+                    </ul>
+                </div>
 
-                    <div className="right-nav">
-                        <Link className="__nav-btn" to="/">
-                            <li>
-                                <span>
-                                    Home
-                                </span>
-                            </li>
-                        </Link>
-
-                        <Link className="__nav-btn" to="/carimentor">
-                            <li>
-                                <span>
-                                    Mentor
-                                </span>
-                            </li>
-                        </Link>
-
-                        <Link className="__nav-btn" to="/carikerja">
-                            <li>
-                                <span>
-                                    Kerja!
-                                </span>
-                            </li>
-                        </Link>
-
-                        <Link className="__signin-btn" to="/usersignin">
-                            <li>
-                                <span>
-                                    Masuk
-                                </span>
-                            </li>
-                        </Link>
-
-                        <Link className="__signup-btn" to="/usersignup">
-                            <li>
-                                <span>
-                                    Daftar
-                                </span>
-                            </li>
-                        </Link>
-                    </div>
-                </ul>
+                <Hamburger />
             </nav>
         </AnimatePresence>
     );
