@@ -163,7 +163,7 @@ function Signin({ history }) {
 
                         <div className="redirect-to-daftar">
                             <p>
-                                Baru di NamaWeb?
+                                Baru di Kerjapedia?
                                 <Link to="/usersignup">
                                     <span>
                                         Daftar

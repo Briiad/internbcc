@@ -98,6 +98,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: var(--darker_white);
+  font-family: var(--font-poppins);
 }
 
 .landing-carikerja .person-image,
@@ -120,6 +121,7 @@
 }
 
 .carikerja-btn button {
+  text-decoration: none;
   width: 150px;
   height: 50px;
   text-align: center;
@@ -131,12 +133,19 @@
   color: var(--darker_white);
 }
 
+.carikerja-btn .btn,
+.carimentor-btn .btn {
+  text-decoration: none;
+  color: #fff;
+}
+
 .landing-carimentor {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: var(--font-poppins);
 }
 
 .landing-carimentor .carimentor-desc {
@@ -145,6 +154,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.carikerja-desc p,
+.carimentor-desc p {
+  font-size: 14px;
 }
 
 .carimentor-btn button {
